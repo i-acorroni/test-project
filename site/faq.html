@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>FAQ — My Static Site</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html">Home</a>
+        <a class="active" href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="card">
+        <h1>FAQ</h1>
+        <ul>
+          <li><b>Do I need a framework?</b> Nope.</li>
+          <li><b>How do I change the style?</b> Edit <code>styles.css</code>.</li>
+          <li><b>How do I publish?</b> Upload the <code>site/</code> folder to any static host.</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>© <span id="year"></span> My Static Site</footer>
+    <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+  </body>
+</html>
